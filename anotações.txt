@@ -75,3 +75,32 @@ Diferencia operações por verbo, não só pela URL.
 🔹 Nível 3 – HATEOAS (Hypermedia As The Engine Of Application State)
 Respostas trazem links que indicam próximas ações possíveis.
 O cliente descobre dinamicamente como interagir com a API.
+
+
+                                                        Injeção de Dependência DI - Dependency Injection
+É uma técnica de programação usada para tornar uma classe independente de suas dependências
+--Em vez de uma classe criar diretamente suas dependências (new), elas são fornecidas de fora (injeção)
+
+1.Código mais flexível e fácil de testar
+2.Facilita troca de implementações (ex: repositório em memória ou banco real)
+3.Segue o princípio da Inversão de Controle (IoC)
+
+O Princípio da Inversão de Controle (IoC) - é um conceito de design de software que busca inverter o fluxo de controle de um programa. 
+Em vez de o seu código controlar a criação e o ciclo de vida de objetos dos quais ele depende, essa responsabilidade é transferida 
+para um container de IoC ou um framework externo, código passa a depender de abstrações, e não de implementações concretas
+
+Analogia Ex.
+uma analogia do dia a dia de Injeção de Dependência (DI):
+🔹 Sem DI (acoplado)
+Imagine que você tem uma cafeteira ☕ que já vem com o pó de café preso dentro dela.
+Se quiser trocar o café por outro tipo (ex: descafeinado), não dá.
+Se estragar, você perde tudo junto.
+
+🔹 Com DI (desacoplado)
+Agora, pense em uma cafeteira normal onde você coloca o pó de café de fora.
+A cafeteira não sabe nem se é café forte, fraco ou chá.
+Você pode mudar a marca ou até usar chá, só trocando o que injeta.
+A cafeteira continua funcionando igual.
+
+A ideia é: o objeto (cafeteira) não cria sua dependência (pó de café), ele apenas recebe de fora o que precisa para funcionar.
+Isso é injeção de dependência → você injeta o que o objeto precisa, em vez de ele mesmo criar.
