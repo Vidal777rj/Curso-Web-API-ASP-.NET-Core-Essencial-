@@ -29,3 +29,49 @@ HTTP Post(create)
 - Usado para criar uma informação (criar um novo recurso)
 - Alteram o estado do recurso (não é um método seguro)
 - Não são idempotentes (não produz o mesmo resultado se repedida)
+
+
+                                                        JSON vs XML
+JSON - È texto simples, legivel, hierárquico(valores dentro de valores), pode ser analisado pelo Javascript
+ex.
+{
+  "id": 1,
+  "nome": "Michel",
+  "Idade": 27
+}
+
+XML  - Mais verboso, estrutura em elementos e atributos, schemas e validações complexas
+ex.
+<usuario id="1">
+  <nome>Michel</nome>
+  <idade>27</idade>
+</usuario>
+
+
+                                                        JSON - ASP .NET core
+A classe HttpClient é usada para enviar uma requisição HTTP e receber a resposta da solicitação (namespace System.Net.Http)
+Permite interagir com recursos em servidores remotos por meio dos principais métodos HTTP, como Get, Post, Put, Delete
+
+--Principais Métodos da classe HttpClient
+DeleteAsync, GetAsync, GetByteArrayAsync, GetStreamAsync, GetStringAsync, PostAsync, PutAsync
+
+                                                        
+                                                        Modelo de maturidade de Richardson (RMM)
+É um modelo sugerido em 2008 por Leonard Richardson que classifica as APIs com base em sua adẽrencia e conformidade com cada 
+um dos quatro níveis do modelo.
+
+🔹 Nível 0 – The Swamp of POX
+Apenas troca de dados via HTTP, sem usar recursos do protocolo.
+Normalmente só um endpoint, ex: /api.
+
+🔹 Nível 1 – Recursos
+Identificação de recursos com URLs diferentes.
+Ex: /clientes, /clientes/1.
+
+🔹 Nível 2 – Verbos HTTP
+Uso correto dos métodos GET, POST, PUT, DELETE.
+Diferencia operações por verbo, não só pela URL.
+
+🔹 Nível 3 – HATEOAS (Hypermedia As The Engine Of Application State)
+Respostas trazem links que indicam próximas ações possíveis.
+O cliente descobre dinamicamente como interagir com a API.
