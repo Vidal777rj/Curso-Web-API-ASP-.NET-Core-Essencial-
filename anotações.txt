@@ -1,11 +1,31 @@
-API - Application Programming Interface
+||| API - Application Programming Interface |||
 -Conjunto de rotinas e padrões estabelecidos e docunmentados por uma aplicação para que outras aplicações consigam utilizam
 suas funcionalidades sem precisar conhecer da sua implementação.
 
-SOAP - Simple Object Access Protocol
+||| SOAP - Simple Object Access Protocol |||
 - É uma protocolo baseado em XML, usado para trocar informações entre aplicações no mesmo ou um diferentes sistemas 
 operacionais
 
-REST - Representation State Transfer Protocol
+||| REST - Representation State Transfer Protocol |||
 - É um estilo arquitetural sem estado que consiste de um Conjunto coordenado de restrições arquiteturais aplicadas
-a componentes de dados dentro de um sistema de hipermidia distribuido
+a componentes de dados dentro de um sistema de hipermidia distribuido.
+
+Recurso: É uma abstração sobre um tipo de informação que uma aplicação gerencia que possui uma identificação única (URI).
+Representação: É um instantâneo do estado de um recurso em um ponto no tempo. Uma sequência de de bytes associado com metadados.
+Interações sem estado(stateless): A comunicação entre o cliente e o servidor sempre contém todas as informações.
+Mensagem: As mensagens devem ser autodescrtivas. no HTTP usa-se os verbos GET, POST, PUT, DELETE.
+
+                                                         HTTPs
+
+**idempotente** - uma requisição idempotente é aquela que pode ser feita uma ou várias vezes e o resultado no servidor 
+será o mesmo
+Idempotência = repetir a requisição não muda o resultado além da primeira execução.
+Não idempotente = cada vez que você chama, o resultado é diferente 
+
+HTTP Get(read)
+- Usado para recuperar informações
+- Não altera o estado do recurso(método seguro)
+HTTP Post(create)
+- Usado para criar uma informação (criar um novo recurso)
+- Alteram o estado do recurso (não é um método seguro)
+- Não são idempotentes (não produz o mesmo resultado se repedida)
