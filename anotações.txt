@@ -1,0 +1,11 @@
+API - Application Programming Interface
+-Conjunto de rotinas e padrões estabelecidos e docunmentados por uma aplicação para que outras aplicações consigam utilizam
+suas funcionalidades sem precisar conhecer da sua implementação.
+
+SOAP - Simple Object Access Protocol
+- É uma protocolo baseado em XML, usado para trocar informações entre aplicações no mesmo ou um diferentes sistemas 
+operacionais
+
+REST - Representation State Transfer Protocol
+- É um estilo arquitetural sem estado que consiste de um Conjunto coordenado de restrições arquiteturais aplicadas
+a componentes de dados dentro de um sistema de hipermidia distribuido
