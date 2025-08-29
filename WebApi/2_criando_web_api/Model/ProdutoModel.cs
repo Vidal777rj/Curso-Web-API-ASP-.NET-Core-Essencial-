@@ -11,4 +11,7 @@ public class ProdutoModel
     public decimal Preco { get; set; }
     public float Estoque { get; set; }
     public DateTime DataCadastro { get; set; } 
+    
+    public int CategoriaId { get; set; }
+    public CategoriaModel? Categoria { get; set; }
 }
