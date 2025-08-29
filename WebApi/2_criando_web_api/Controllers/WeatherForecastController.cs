@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace _1_Primeira_Api.Controllers;
+namespace _2_criando_web_api.Controllers;
 
 [ApiController]
-[Route("temperatura")]
+[Route("tempo")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_Primeira_Api", "1_Primeira_Api\1_Primeira_Api.csproj", "{96F53FBB-E994-4AF1-A045-5A567D69BC69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_criando_web_api", "2_criando_web_api\2_criando_web_api.csproj", "{F12BA104-862C-4645-9E58-2843E7166FD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{96F53FBB-E994-4AF1-A045-5A567D69BC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96F53FBB-E994-4AF1-A045-5A567D69BC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96F53FBB-E994-4AF1-A045-5A567D69BC69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F12BA104-862C-4645-9E58-2843E7166FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12BA104-862C-4645-9E58-2843E7166FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12BA104-862C-4645-9E58-2843E7166FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12BA104-862C-4645-9E58-2843E7166FD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
