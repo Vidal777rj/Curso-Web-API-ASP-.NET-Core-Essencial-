@@ -104,3 +104,14 @@ A cafeteira continua funcionando igual.
 
 A ideia é: o objeto (cafeteira) não cria sua dependência (pó de café), ele apenas recebe de fora o que precisa para funcionar.
 Isso é injeção de dependência → você injeta o que o objeto precisa, em vez de ele mesmo criar.
+
+
+                                                        Data Annotations
+Key - Indentifica a chave estrangeira
+Table("nome") - Define o nome da tabela para a qual a classe será  mapeada
+Column - Define a coluna na tabela para a qual a propriedade será mapeada
+DataType - Associa um tipo de dados adicional a uma propriedade
+ForeignKey - Especifica que a propriedade é usada como uma chave estrangeira
+NotMapped - Exclui a propriedade do mapeamento
+StringLength - Define o tamanho mínimo e máximo permitido para o tipo
+Required - Especifica que o valor do campo é obrigatorio (Not Null)
